@@ -1,5 +1,5 @@
-import { el } from './elements' 
-import  toast  from '../../components/toast'
+import { el } from './elements'
+import toast from '../../components/toast'
 import alert from '../../components/alert'
 
 class SignupPage {
@@ -11,7 +11,9 @@ class SignupPage {
 
     go() {
         cy.visit('/signup')
-        
+        cy.contains(el.title)
+            .should('be.visible')
+
     }
 
     form(user) {
