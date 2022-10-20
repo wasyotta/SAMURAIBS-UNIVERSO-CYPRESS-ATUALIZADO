@@ -28,7 +28,7 @@ jobs:
               site: 'https://samuraibs-api-will.herokuapp.com'
         
           - name: 'UI Tests - Chrome'
-            uses: cypress-io/github-action@v4.x.x
+            uses: cypress-io/github-action@v2
             with:
               # we have already installed all dependencies above
               install-command: yarn install
