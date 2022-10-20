@@ -11,7 +11,7 @@ jobs:
   # This workflow contains a single job called "build"
   chrome-ui-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.6-chrome100-ff98
+    container: cypress/browsers:node16.17.1-chrome106-ff105-edge
     strategy:
       fail-fast: false
       matrix:
@@ -24,7 +24,7 @@ jobs:
       - name: Ping API (heroku)
         uses: Leocardoso94/is-my-site-up@v1.2
         with:
-          site: https://samuraibs-api-papito.herokuapp.com
+          site: https://samuraibs-api-will.herokuapp.com
 
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
