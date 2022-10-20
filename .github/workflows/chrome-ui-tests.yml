@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       specs:
-        description: 'Run All unique spec'
+        description: 'Run All, our an unique spec'
         default: cypress/integration/*
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
